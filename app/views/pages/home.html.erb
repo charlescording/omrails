@@ -1,8 +1,14 @@
+<% if user_signed_in? %>
+	<h1> Welcome mofucka.</h1>
+	<% else %>
+	<h1> Sign the fuck up</h1>
+	<% end %>
+
 <div class="hero-unit">
   <h1>Heading</h1>
   <p>Tagline</p>
   <p>
-    <%= link_to "Say Whats Up", "#", class: "btn btn-primary btn-large" %>
+    <%= link_to "Say Whats Up", new_user_registration_path, class: "btn btn-primary btn-large" %>
   </p>
 </div>
 
